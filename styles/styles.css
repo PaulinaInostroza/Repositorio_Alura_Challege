@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root{
+    --color-primario:black;
+    --color-secundario:#45565F;
+    --color-terciario:#0A3871;
+    --color-boton:#D8DFE8;
+
+    --fuente-inter:'Inter', sans serif;
+    --fuente-krona:'Krona One',sans serif;
+}
+* {
+    padding: 0;
+    margin:0;
+}
+body{
+    box-sizing: border-box;
+}
+.header{
+    padding: 2em 0em 0em 1.5em;
+}
+
+.encriptador {
+    display: flex;
+    align-items: center;
+    padding:2% 8%;
+    justify-content: space-between;
+}
+.encriptador_contenido{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.encriptador_contenido_titulo{
+    width: 300px;
+    font-family:var(--fuente-inter);
+    font-size: 25px;
+    font-weight: 450;
+    color: var(--color-terciario);
+    display: flex;
+    justify-content:center;
+   
+    gap:20px;
+
+
+}
+.encriptador_contenido_input{
+    width: 380px;
+    height: 40px;
+    border: 1px solid ;
+    border-color: var(--color-secundario);
+    border-radius: 15px;
+    overflow: scroll;
+
+
+}
+.encriptador_contenido_contenido{
+    width: 500px;
+    padding: 0% 0% 0% 220%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.encriptador_imagen{
+    width:450px;
+
+}
+.encriptador_contenido_contenido_cometario1{
+    font-family:var(--fuente-inter);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-secundario);
+}
+.encriptador_contenido_contenido_cometario2{
+    font-family:var(--fuente-inter);
+    font-size: 1.25rem;
+    font-weight: 450;
+    color: var(--color-secundario);
+}
+.encriptador_contenido_botones{
+    width: 680px;
+    padding: 0% 0% 0% 0%;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    justify-content: center;
+    
+}
+.encriptador_contenido_botones_cometario{
+    width: 240px;
+    font-family:var(--fuente-inter);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-secundario); 
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    gap:5px;
+
+}
+.encriptador_botones{
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    
+}
+.encriptador_contenido_boton_encriptar{
+    width: 328px;
+    text-align: center;
+    padding:21.5px 0 ;
+    border-radius: 24px;
+    font-family: "Inter" , sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    text-decoration: none;
+    background-color: var(--color-terciario);
+    color:white;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.encriptador_contenido_boton_encriptar:hover{
+   background-color:#062a57;
+}
+
+.encriptador_contenido_boton_desencriptar{
+    width: 328px;
+    text-align: center;
+    padding:21.5px 0 ;
+    border-radius: 24px;
+    font-family: "Inter" , sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    text-decoration: none;
+    background-color: var(--color-boton);
+    border-color: var(--color-terciario);
+    border:  1px solid;
+    color:var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.encriptador_contenido_boton_desencriptar:hover{
+    background-color:#d0d2d4;
+ }
+.footer{
+    
+    width: auto;
+    text-align: right;
+    background-color: var(--color-boton);
+    color:var(--color-secundario);
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 450;
+}
+@media(max-width:770px){
+.encriptador_imagen{
+    display: none;
+}
+.encriptador_contenido_contenido{
+  position: relative;
+  top: 500px;
+  padding: 0% 0% 0% 30%;  
+}
+.encriptador_contenido_input{
+    width: 650px;
+    height: 50px;
+    border: 1px solid ;
+    border-color: var(--color-secundario);
+    border-radius: 15px;
+    border-color: #45565F;
+}
+.encriptador_contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.encriptador_contenido_botones{
+    display: flex;
+    position: relative;
+    top: 250px;
+    
+}
+.footer{
+    position: relative;
+  top: 680px;
+  padding: 0% 0% 0% 30%;  
+}
+}
+@media(max-width:375px){
+    .encriptador_imagen{
+        display: none;
+    }
+
+    .encriptador_contenido_input{
+        width: 320px;
+        height: 150px;
+        border: 1px solid ;
+        border-color: var(--color-secundario);
+        border-radius: 15px;
+        border-color: #45565F;
+    }
+    .encriptador_contenido_contenido{
+        position: relative;
+        top:550px;
+        width: 280px;
+    }
+    .encriptador_contenido_contenido_cometario1{
+        font-size: 1rem;
+
+    }
+    .encriptador_contenido_contenido_cometario2{
+        font-size: 1rem;
+
+    }
+    .encriptador_botones{
+        width:330px;
+    }
+    .footer{
+        position: relative;
+      top: 1200px;
+      padding: 0% 0% 0% 30%;  
+    }
+    
+    }

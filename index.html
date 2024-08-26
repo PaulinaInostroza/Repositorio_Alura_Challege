@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Challege</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_contenido">
+        <img class="presentacion_logo" src="./Img/Logo.png" alt="Logo" />
+      </nav>
+    </header>
+    <main class="encriptador">
+      <section class="encriptador_contenido">
+        <h1 class="encriptador_contenido_titulo">Ingrese el texto aqui<img src="./Img/icon_flecha.png" /></h1>
+        <input id="palabraUsuario" type="text" class="encriptador_contenido_input" />
+        <div class="encriptador_contenido_contenido">
+          <img class="encriptador_imagen" src="./Img/Vector.png" alt="Imagen" />
+          <label class="encriptador_contenido_contenido_cometario1">Ningún mensaje fue encontrado</label>
+          <label class="encriptador_contenido_contenido_cometario2">Ingresa el texto que desees encriptar o desencriptar.</label>
+        </div>
+        <div class="encriptador_contenido_botones">
+          <label class="encriptador_contenido_botones_cometario"><img src="./Img/circle-fill.png" />Solo letras minúsculas y sin acentos</label>
+          <div class="encriptador_botones">
+            <button onclick="encriptar()" class="encriptador_contenido_boton_encriptar" id="encriptar">Encriptar</button>
+            <button onclick="desencriptar()" class="encriptador_contenido_boton_desencriptar" id="desencriptar">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js" defer></script>
+    <footer class="footer">
+      <label>Desarrollado por Paulina Inostroza</label>
+    </footer>
+  </body>
+</html>
